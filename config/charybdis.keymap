@@ -9,6 +9,8 @@
 
 &mmv { time-to-max-speed-ms = <200>; };
 
+&lt { tapping-term-ms = <150>; };
+
 / {
     macros {
         To1_macro: To1_macro {
