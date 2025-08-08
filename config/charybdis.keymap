@@ -5,7 +5,7 @@
 
 #define CHARYBDIS_MINIMUM_DEFAULT_DPI 1200
 #define CHARYBDIS_DEFAULT_DPI_CONFIG_STEP 200
- 
+
 &lt {
     tapping-term-ms = <200>;
     flavor = "balanced";
@@ -44,23 +44,23 @@
 
         QWERTY {
             bindings = <
-&kp ESC         &kp N1  &kp N2  &kp N3     &kp N4        &kp N5          &kp N6           &kp N7     &kp N8     &kp N9   &kp N0            &kp MINUS
-&kp GRAVE       &kp Q   &kp W   &kp E      &kp R         &kp T           &kp Y            &kp U      &kp I      &kp O    &kp P             &kp SEMICOLON
-&kp LEFT_SHIFT  &kp A   &kp S   &kp D      &kp F         &kp G           &kp H            &kp J      &kp K      &kp L    &kp SLASH         &kp SQT
-&kp LCTRL       &kp Z   &kp X   &kp C      &kp V         &kp B           &kp N            &kp M      &kp COMMA  &kp DOT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-                                &lt 2 TAB  &lt 1 SPACE   &lt 3 DELETE    &lt 1 BACKSPACE  &kp ENTER
-                                           &kp LEFT_WIN  &kp LEFT_ALT    &kp ENTER
+&kp ESC         &kp N1  &kp N2  &kp N3     &kp N4          &kp N5          &kp N6           &kp N7     &kp N8     &kp N9   &kp N0            &kp MINUS
+&kp GRAVE       &kp Q   &kp W   &kp E      &kp R           &kp T           &kp Y            &kp U      &kp I      &kp O    &kp P             &kp SEMICOLON
+&kp LEFT_SHIFT  &kp A   &kp S   &kp D      &kp F           &kp G           &kp H            &kp J      &kp K      &kp L    &kp SLASH         &kp SQT
+&kp LCTRL       &kp Z   &kp X   &kp C      &kp V           &kp B           &kp N            &kp M      &kp COMMA  &kp DOT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                                &lt 2 TAB  &lt 1 SPACE     &lt 3 DELETE    &lt 1 BACKSPACE  &kp ENTER
+                                           &lt 4 LEFT_GUI  &kp LEFT_ALT    &kp ENTER
             >;
         };
 
         F_layers {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                     &kp F7  &kp F8     &kp F9     &kp F10    &kp F11  &kp F12
-&trans  &none   &none   &none   &none   &trans                     &none   &none      &none      &none      &none    &none
-&trans  &none   &none   &none   &none   &trans                     &none   &mkp LCLK  &mkp RCLK  &mkp MCLK  &none    &trans
-&trans  &trans  &trans  &trans  &trans  &none                      &none   &none      &trans     &trans     &none    &trans
-                        &trans  &trans  &kp LANG_ZENKAKUHANKAKU    &none   &none
-                                &trans  &trans                     &trans
+&kp F1  &kp F2  &kp F3  &kp F4                   &kp F5  &kp F6       &kp F7  &kp F8     &kp F9     &kp F10    &kp F11  &kp F12
+&trans  &none   &none   &none                    &none   &trans       &none   &none      &none      &none      &none    &none
+&trans  &none   &none   &none                    &none   &trans       &none   &mkp LCLK  &mkp RCLK  &mkp MCLK  &none    &trans
+&trans  &trans  &trans  &trans                   &trans  &none        &none   &none      &trans     &trans     &none    &trans
+                        &kp LANG_ZENKAKUHANKAKU  &trans  &kp GRAVE    &none   &none
+                                                 &trans  &trans       &trans
             >;
         };
 
@@ -88,10 +88,10 @@
 
         snipe-layers {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mkp LCLK  &mkp RCLK  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &none      &mkp LCLK  &mkp RCLK  &mkp MCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans     &trans  &trans
                         &trans  &trans  &trans    &mkp LCLK  &mkp RCLK
                                 &trans  &trans    &trans
             >;
