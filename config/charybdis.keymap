@@ -3,6 +3,9 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
+#define CHARYBDIS_MINIMUM_DEFAULT_DPI 1200
+#define CHARYBDIS_DEFAULT_DPI_CONFIG_STEP 200
+ 
 &lt {
     tapping-term-ms = <200>;
     flavor = "balanced";
