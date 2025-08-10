@@ -39,13 +39,6 @@
     };
 
     behaviors {
-        tapdance_bacspace: tapdance_bacspace {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_BACSPACE";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&key_repeat>;
-        };
-
         lt_kp: lt_kp {
             compatible = "zmk,behavior-hold-tap";
             label = "LT_KP";
