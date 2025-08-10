@@ -39,22 +39,20 @@
     };
 
     behaviors {
-        backspace: backspace {
+        tapdance_bacspace: tapdance_bacspace {
             compatible = "zmk,behavior-tap-dance";
-            label = "BACKSPACE";
+            label = "TAPDANCE_BACSPACE";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&kp BACKSPACE>;
-
-            tapping-term-ms = <100>;
+            bindings = <&kp BACKSPACE>, <&key_repeat>;
         };
 
-        mo_and_backspace: mo_and_backspace {
+        lt_tapdance: lt_tapdance {
             compatible = "zmk,behavior-hold-tap";
-            label = "MO_AND_BACKSPACE";
-            bindings = <&mo>, <&backspace>;
+            label = "LT_TAPDANCE";
+            bindings = <&mo>, <&tapdance_bacspace>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -67,7 +65,7 @@
 &kp GRAVE       &kp Q   &kp W   &kp E      &kp R           &kp T           &kp Y                    &kp U      &kp I      &kp O    &kp P             &kp SEMICOLON
 &kp LEFT_SHIFT  &kp A   &kp S   &kp D      &kp F           &kp G           &kp H                    &kp J      &kp K      &kp L    &kp SLASH         &kp SQT
 &kp LCTRL       &kp Z   &kp X   &kp C      &kp V           &kp B           &kp N                    &kp M      &kp COMMA  &kp DOT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-                                &lt 2 TAB  &lt 1 SPACE     &lt 3 DELETE    &backspace               &kp ENTER
+                                &lt 2 TAB  &lt 1 SPACE     &lt 3 DELETE    &lt_tapdance 1 0         &kp ENTER
                                            &lt 4 LEFT_GUI  &kp LEFT_ALT    &mt LEFT_ALT LEFT_SHIFT
             >;
         };
