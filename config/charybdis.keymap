@@ -46,10 +46,10 @@
             bindings = <&kp BACKSPACE>, <&key_repeat>;
         };
 
-        lt_tapdance: lt_tapdance {
+        lt_kp: lt_kp {
             compatible = "zmk,behavior-hold-tap";
-            label = "LT_TAPDANCE";
-            bindings = <&mo>, <&tapdance_bacspace>;
+            label = "LT_KP";
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -66,7 +66,7 @@
 &kp GRAVE       &kp Q   &kp W   &kp E      &kp R           &kp T           &kp Y                    &kp U      &kp I      &kp O    &kp P             &kp SEMICOLON
 &kp LEFT_SHIFT  &kp A   &kp S   &kp D      &kp F           &kp G           &kp H                    &kp J      &kp K      &kp L    &kp SLASH         &kp SQT
 &kp LCTRL       &kp Z   &kp X   &kp C      &kp V           &kp B           &kp N                    &kp M      &kp COMMA  &kp DOT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-                                &lt 2 TAB  &lt 1 SPACE     &lt 3 DELETE    &lt_tapdance 1 0         &kp ENTER
+                                &lt 2 TAB  &lt 1 SPACE     &lt 3 DELETE    &lt_kp 1 BACKSPACE       &kp ENTER
                                            &lt 4 LEFT_GUI  &kp LEFT_ALT    &mt LEFT_ALT LEFT_SHIFT
             >;
         };
