@@ -6,7 +6,6 @@
 
 #define CHARYBDIS_MINIMUM_DEFAULT_DPI 400
 #define CHARYBDIS_DEFAULT_DPI_CONFIG_STEP 200
-
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -99,23 +98,23 @@
 
         F_layers {
             bindings = <
-&kp F1          &kp F2  &kp F3          &kp F4                   &kp F5           &kp F6               &kp F7     &kp F8     &kp F9     &kp F10    &kp F11  &kp F12
-&none           &none   &none           &none                    &none            &kp JP_PIPE          &kp EQUAL  &none      &none      &none      &none    &bt BT_NXT
-&kp LEFT_SHIFT  &none   &none           &kp UP_ARROW             &none            &kp LEFT_BRACKET     &kp JP_UNDERSCORE     &mkp LCLK  &mkp RCLK  &mkp MCLK  &none    &bt BT_PRV
-&kp LCTRL       &none   &kp LEFT_ARROW  &kp DOWN_ARROW           &kp RIGHT_ARROW  &kp F5               &kp JP_YEN      &none      &trans     &trans     &none    &bt BT_CLR
-                                        &kp LANG_ZENKAKUHANKAKU  &trans           &kp GRAVE            &none      &none
-                                                                 &trans           &trans               &trans
+&kp F1          &kp F2  &kp F3          &kp F4                   &kp F5           &kp F6              &kp F7             &kp F8     &kp F9     &kp F10    &kp F11  &kp F12
+&none           &none   &none           &none                    &none            &kp JP_PIPE         &kp EQUAL          &none      &none      &none      &none    &bt BT_NXT
+&kp LEFT_SHIFT  &none   &none           &kp UP_ARROW             &none            &kp LEFT_BRACKET    &kp JP_UNDERSCORE  &mkp LCLK  &mkp RCLK  &mkp MCLK  &none    &bt BT_PRV
+&kp LCTRL       &none   &kp LEFT_ARROW  &kp DOWN_ARROW           &kp RIGHT_ARROW  &kp F5              &kp JP_YEN         &none      &trans     &trans     &none    &bt BT_CLR
+                                        &kp LANG_ZENKAKUHANKAKU  &trans           &kp GRAVE           &none              &none
+                                                                 &kp LEFT_GUI     &trans              &trans
             >;
         };
 
         NUM_Layers {
             bindings = <
-&trans  &none      &none   &none   &none   &none         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp MINUS  &kp N7  &kp N8  &kp N9  &kp COLON     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N0     &kp N4  &kp N5  &kp N6  &kp SLASH     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &none      &kp N1  &kp N2  &kp N3  &kp PERIOD    &none   &trans  &trans  &trans  &trans  &trans
-                           &trans  &trans  &trans        &trans  &trans
-                                   &trans  &trans        &trans
+&trans  &none      &none   &none   &none   &none               &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp MINUS  &kp N7  &kp N8  &kp N9  &kp SINGLE_QUOTE    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N0     &kp N4  &kp N5  &kp N6  &kp SLASH           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &none      &kp N1  &kp N2  &kp N3  &kp PERIOD          &none   &trans  &trans  &trans  &trans  &trans
+                           &trans  &trans  &trans              &trans  &trans
+                                   &trans  &trans              &trans
             >;
         };
 
